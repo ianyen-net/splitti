@@ -178,6 +178,23 @@
       cursor: default;
       transform: none;
     }
+    .case-password-help {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      line-height: 1.45;
+      color: var(--cl-muted);
+      margin: -2px 0 4px;
+    }
+    .case-password-help a {
+      color: var(--cl-text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+    .case-password-help a:hover {
+      opacity: 0.8;
+    }
     .case-password-error {
       font-family: var(--font-sans);
       font-size: 13px;
@@ -233,6 +250,7 @@
             </svg>
           </button>
         </div>
+        <p class="case-password-help">Don’t have the password? <a href="mailto:ianyenyh@gmail.com?subject=Portfolio%20Access%20Request&amp;body=Hi%20Ian%2C%0A%0AI%27d%20love%20to%20request%20the%20password%20to%20view%20your%20portfolio%20case%20studies%20and%20prototypes.%0A%0AThanks!">Email Ian</a> to ask for it</p>
         <button type="submit" class="case-password-submit" id="gate-btn">
           <span id="gate-btn-label">Continue</span>
           <span aria-hidden="true">→</span>
